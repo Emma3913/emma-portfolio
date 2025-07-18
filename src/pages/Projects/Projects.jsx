@@ -91,7 +91,7 @@ export const Projects = () => {
             <div className="relative overflow-hidden w-fit">
               <div style={{ opacity: 1, transform: "none" }}>
                 <div className="flex flex-wrap gap-4 text-sm text-red-300 my-2">
-                  Flutter - MUI - Python - FastAPI
+                  First Project
                 </div>
               </div>
               <div
@@ -102,8 +102,10 @@ export const Projects = () => {
             <div className="relative overflow-hidden w-fit">
               <div style={{ opacity: 1, transform: "none" }}>
                 <p className="text-zinc-300 leading-relaxed">
-                  A real-time coaching app for students learning to paint. This
-                  app is my baby, designed and built on my own.{" "}
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Magni exercitationem in explicabo officia inventore sapiente
+                  quae ipsum beatae quasi quisquam debitis amet iure porro rerum
+                  voluptate, similique consectetur harum nisi!
                   <span className="inline-block text-sm text-red-300 cursor-pointer">
                     Learn more &gt;
                   </span>
@@ -130,7 +132,7 @@ export const Projects = () => {
               <div style={{ opacity: 1, transform: "none" }}>
                 <div className="flex items-center gap-2 w-full">
                   <h4 className="font-bold text-lg shrink-0 max-w-[calc(100%_-_150px)] text-white">
-                    The Canvas Club
+                    Second Project
                   </h4>
                   <div className="w-full h-[1px] bg-zinc-600"></div>
                   <a
@@ -194,9 +196,11 @@ export const Projects = () => {
             <div className="relative overflow-hidden w-fit">
               <div style={{ opacity: 1, transform: "none" }}>
                 <p className="text-zinc-300 leading-relaxed">
-                  A community-driven art platform where artists can share their
-                  work and get feedback from peers. I collaborated with a team
-                  to bring this project to life.{" "}
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Fugiat, corrupti praesentium magnam ut vitae similique
+                  provident, perferendis recusandae modi repellendus error
+                  architecto consectetur. Aliquid doloremque recusandae numquam
+                  molestias consequatur corporis?
                   <span className="inline-block text-sm text-red-300 cursor-pointer">
                     Learn more &gt;
                   </span>
