@@ -38,7 +38,7 @@ export const Projects = () => {
               <div style={{ opacity: 1, transform: "none" }}>
                 <div className="flex items-center gap-2 w-full">
                   <h4 className="font-bold text-lg shrink-0 max-w-[calc(100%_-_150px)] text-white">
-                    Paint.app
+                    First Project
                   </h4>
                   <div className="w-full h-[1px] bg-zinc-600"></div>
                   <a
