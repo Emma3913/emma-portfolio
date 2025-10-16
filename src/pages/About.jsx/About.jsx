@@ -1,4 +1,5 @@
 import React from "react";
+import BoxTechnologies from "../../components/common/BoxTechnologies";
 
 export const About = () => {
   return (
@@ -32,14 +33,7 @@ export const About = () => {
                   <span className="bg-[#3ecfb2] text-white py-2 px-3 rounded font-bold mr-1 float-left text-2xl">
                     H
                   </span>
-                  Hey! I'm Emma, Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Quae, magnam nam? In mollitia tempora est
-                  nostrum corrupti magnam, vero eveniet doloribus tenetur
-                  nesciunt explicabo voluptate impedit iusto quisquam
-                  repellendus quaerat! Lorem ipsum dolor sit amet consectetur,
-                  adipisicing elit. Impedit vel aperiam eum facere iste adipisci
-                  nulla dignissimos iusto saepe fugiat. Debitis, nisi optio
-                  officia nihil quia inventore necessitatibus blanditiis illo?
+                  ey! I'm Emma, We are still working on this section.
                 </p>
               </div>
               <div
@@ -51,11 +45,12 @@ export const About = () => {
             <div className="relative overflow-hidden w-fit">
               <div style={{ opacity: 1, transform: "none" }}>
                 <p className="leading-relaxed text-zinc-300">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Quibusdam, temporibus sapiente in nisi minima molestias quidem
                   ipsam praesentium, similique consequuntur voluptas nam
                   corrupti sunt reiciendis maiores earum dolorum? Perspiciatis,
-                  exercitationem.
+                  exercitationem. */}
+                  {/* We are still working on this section. */}
                 </p>
               </div>
               <div
@@ -67,10 +62,11 @@ export const About = () => {
             <div className="relative overflow-hidden w-fit">
               <div style={{ opacity: 1, transform: "none" }}>
                 <p className="leading-relaxed text-zinc-300">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  {/* Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Natus animi id molestias suscipit sed, labore omnis numquam et
                   eos, commodi nulla harum, modi dicta. Soluta dignissimos
-                  beatae culpa aliquam fugit!
+                  beatae culpa aliquam fugit! */}
+                  {/* We are still working on this section. */}
                 </p>
               </div>
               <div
@@ -82,10 +78,11 @@ export const About = () => {
             <div className="relative overflow-hidden w-fit">
               <div style={{ opacity: 1, transform: "none" }}>
                 <p className="leading-relaxed text-zinc-300">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  {/* Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Reprehenderit, incidunt quam tempore itaque illum iusto beatae
                   quidem ratione facere est in eum atque quisquam, vel dolore
-                  facilis possimus reiciendis sunt.
+                  facilis possimus reiciendis sunt. */}
+                  {/* We are still working on this section. */}
                 </p>
               </div>
               <div
@@ -198,48 +195,7 @@ export const About = () => {
                     <span className="font-bold ml-2">Use at work</span>
                   </h4>
                   <div className="flex flex-wrap gap-2 mb-12 text-white">
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      JavaScript
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      TypeScript
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      HTML
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      CSS
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      React
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      Redux
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      NodeJS
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      Express
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      Postgres
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      MongoDB
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      GitHub
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      Jira
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      Heroku
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      AWS
-                    </span>
+                    <BoxTechnologies nameTechnology={"JavaScript"} />
                   </div>
                 </div>
               </div>
@@ -267,36 +223,7 @@ export const About = () => {
                     <span className="font-bold ml-2">Use for fun</span>
                   </h4>
                   <div className="flex flex-wrap gap-2 mb-12 text-white">
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      Rust
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      Tailwind
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      Java
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      Spring
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      Figma
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      Whimsical
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      Planetscale
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      GraphQL
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      Python
-                    </span>
-                    <span className="text-xs px-2 py-1 rounded bg-zinc-700">
-                      FastAPI
-                    </span>
+                    <BoxTechnologies nameTechnology={"Rust"} />
                   </div>
                 </div>
               </div>

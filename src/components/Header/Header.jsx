@@ -1,6 +1,11 @@
-import React from "react";
-
 export const Header = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/Emmanuel_Alexander_Vaquero_Aquino_CV_English.pdf";
+    link.download = "Emmanuel_Alexander_Vaquero_Aquino_CV_English.pdf";
+    link.click();
+  };
+
   return (
     <div className="h-[72px] bg-transparent backdrop-blur-xl px-4 flex items-center justify-between sticky top-0 z-20 ">
       <div className="flex items-center text-lg gap-4">
@@ -43,7 +48,10 @@ export const Header = () => {
           </svg>
         </a>
       </div>
-      <button className='relative z-0 flex items-center gap-2 overflow-hidden rounded-md border-[1px] border-white px-4 py-2 font-medium text-sm text-white transition-all duration-300 before:absolute before:inset-0 before:-z-10 before:translate-x-[150%] before:translate-y-[150%] before:scale-[2.5] before:rounded-[100%] before:bg-[#3ecfb2] before:transition-transform before:duration-1000 before:content-[""] hover:text-zinc-950 hover:before:translate-x-[0%] hover:before:translate-y-[0%] active:scale-95'>
+      <button
+        onClick={handleDownload}
+        className='relative z-0 flex items-center gap-2 overflow-hidden rounded-md border-[1px] border-white px-4 py-2 font-medium text-sm text-white transition-all duration-300 before:absolute before:inset-0 before:-z-10 before:translate-x-[150%] before:translate-y-[150%] before:scale-[2.5] before:rounded-[100%] before:bg-[#3ecfb2] before:transition-transform before:duration-1000 before:content-[""] hover:text-zinc-950 hover:before:translate-x-[0%] hover:before:translate-y-[0%] active:scale-95'
+      >
         My Resume
       </button>
     </div>

@@ -1,8 +1,18 @@
-import React from "react";
+import Me from "./../../assets/img/me.jpg";
 
 export const Hero = () => {
   return (
-    <section id="hero" className="text-slat-100 overflow-hidden py-24 md:py-32">
+    <section
+      id="hero"
+      className="text-slat-100 overflow-hidden py-24 md:py-20 flex justify-center items-center"
+    >
+      <div className="relative mx-4">
+        <img
+          src={Me}
+          alt="Emma"
+          className="h-72 w-72 object-cover rounded-full shadow-lg ring-4 ring-gray-800 hover:ring-teal-400 transition-all duration-300"
+        />
+      </div>
       <div className="relative">
         <h1 className="pointer-events-auto text-4xl sm:text-6xl font-black text-zinc-100 md:text-8xl tracking-tight">
           Hi, I'm Emma<span className="text-[#3ecfb2] tracking-tight">.</span>
@@ -14,14 +24,10 @@ export const Hero = () => {
           </span>
         </h2>
         <p className="pointer-events-auto leading-relaxed md:leading-relaxed max-w-xl text-sm text-zinc-300 md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
-          beatae maxime autem eum corrupti, temporibus exercitationem,
-          perferendis excepturi dicta voluptas eaque voluptates recusandae nemo
-          praesentium alias tempora voluptatem perspiciatis ducimus. Lorem ipsum
-          dolor sit amet consectetur, adipisicing elit. Praesentium natus
-          explicabo, et sapiente earum dolor aperiam quod repellat, ex
-          cupiditate totam voluptate exercitationem nostrum error provident
-          harum quam sint ut?
+          A Frontend Developer passionate about crafting seamless user
+          experiences — and diving into the Backend to make them come alive. I
+          enjoy building modern, scalable web applications using technologies
+          like React, Next.js, and Spring Boot.
         </p>
       </div>
     </section>

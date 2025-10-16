@@ -1,4 +1,5 @@
-import React from "react";
+import CardExperience from "../../components/common/CardExperience";
+import { technologies, technologiesRecent } from "../../data";
 
 export default function Experience() {
   return (
@@ -23,65 +24,27 @@ export default function Experience() {
         </h2>
       </div>
 
-      <div className="mb-6 border-b pb-6 border-zinc-700">
-        <div className="flex items-center justify-between mb-2">
-          <div className="relative overflow-hidden w-fit">
-            <div className="opacity-100 transform-none">
-              <span className="font-bold text-xl text-white">Google</span>
-            </div>
-          </div>
-          <div className="relative overflow-hidden w-fit">
-            <div className="opacity-100 transform-none">
-              <span className="text-white">2022 - Present</span>
-            </div>
-          </div>
-        </div>
-        <div className="flex items-center justify-between mb-4">
-          <div className="relative overflow-hidden w-fit">
-            <div className="opacity-100 transform-none">
-              <span className="text-[#3ecfb2] font-bold">
-                Software Engineer
-              </span>
-            </div>
-          </div>
-          <div className="relative overflow-hidden w-fit">
-            <div className="opacity-100 transform-none">
-              <span className="text-white">Atlanta</span>
-            </div>
-          </div>
-        </div>
-        <p className="mb-6 text-zinc-300 leading-relaxed">
-          I help build and scale Google Photos. Increased throughput of our
-          primary services by 70%. Migrated backend service from Java to Go.
-          Also helped make it look prettier.
-        </p>
-        <div className="flex flex-wrap gap-2">
-          <span className="text-xs text-white px-2 py-1 rounded bg-zinc-700">
-            Angular
-          </span>
-          <span className="text-xs text-white px-2 py-1 rounded bg-zinc-700">
-            Python
-          </span>
-          <span className="text-xs text-white px-2 py-1 rounded bg-zinc-700">
-            GCP
-          </span>
-          <span className="text-xs text-white px-2 py-1 rounded bg-zinc-700">
-            Git
-          </span>
-          <span className="text-xs text-white px-2 py-1 rounded bg-zinc-700">
-            GitHub
-          </span>
-          <span className="text-xs text-white px-2 py-1 rounded bg-zinc-700">
-            Java
-          </span>
-          <span className="text-xs text-white px-2 py-1 rounded bg-zinc-700">
-            Golang
-          </span>
-          <span className="text-xs text-white px-2 py-1 rounded bg-zinc-700">
-            K8s
-          </span>
-        </div>
-      </div>
+      <CardExperience
+        company={"TEKSI Technology Consultants S.A. de C.V."}
+        date={"May – August 2024"}
+        description={
+          "Developed REST APIs with Spring Boot for a project in the financial sector. Created dynamic components in React + TypeScript, consuming APIs with Axios. Worked as a team using SCRUM, participating in sprints, and implementing best practices."
+        }
+        location={"Tehuacán, Puebla"}
+        position={"Fullstack Developer"}
+        technologies={technologies}
+      />
+
+      <CardExperience
+        company={"Maxikash – Motorcycle Finance Company"}
+        date={"January 2025 – Present"}
+        description={
+          "Development of REST endpoints in Spring Boot 3 with Java 17, applying best practices and architectural standards. Implementation and maintenance of modules in a Java Web App system (Java 8, legacy) used for credit management. Support in the development of a mobile application using React Native CLI + TypeScript, including the generation of the deployment file for the Google Play Store. Integration of MySQL databases for data persistence. Participation in an agile team using the SCRUM methodology."
+        }
+        location={"Mexico City"}
+        position={"Backend Developer"}
+        technologies={technologiesRecent}
+      />
     </section>
   );
 }

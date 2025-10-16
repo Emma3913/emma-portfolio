@@ -18,19 +18,10 @@ export default function Contact() {
               <a
                 target="_blank"
                 className="text-indigo-300 hover:underline"
-                href="https://www.linkedin.com"
+                href="www.linkedin.com/in/emmanuel-alexander"
               >
                 {" "}
                 Linkedin{" "}
-              </a>
-              or
-              <a
-                target="_blank"
-                className="text-indigo-300 hover:underline"
-                href="https://www.twitter.com"
-              >
-                {" "}
-                Twitter{" "}
               </a>
               if that's more your speed.
             </p>
