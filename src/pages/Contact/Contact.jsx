@@ -1,20 +1,23 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t, i18n } = useTranslation();
   return (
     <section className="section-wrapper" id="contact">
       <div className="max-w-xl mx-auto px-8 py-12 rounded-xl">
         <div className="relative overflow-hidden w-full">
           <div className="opacity-100 transform-none">
             <h4 className="text-4xl text-white md:text-5xl text-center font-black">
-              Contact<span className="text-[#3ecfb2]">.</span>
+              {t("contact")}
+              <span className="text-[#3ecfb2]">.</span>
             </h4>
           </div>
         </div>
         <div className="relative overflow-hidden w-full">
           <div className="opacity-100 transform-none">
             <p className="text-center my-8 text-zinc-300 leading-relaxed">
-              Shoot me an email if you want to connect! You can also find me on
+              {t("contactDescription")}
               <a
                 target="_blank"
                 className="text-indigo-300 hover:underline"
@@ -23,7 +26,9 @@ export default function Contact() {
                 {" "}
                 Linkedin{" "}
               </a>
-              if that's more your speed.
+              {t(
+                "contactAditionals ,                                                    ",
+              )}
             </p>
           </div>
         </div>

@@ -1,8 +1,10 @@
 import React from "react";
 import LonelyCar from "./../../../public/lonelyCar.jpg";
 import CardProject from "../../components/common/CardProject";
+import { useTranslation } from "react-i18next";
 
 export const Projects = () => {
+  const { t, i18n } = useTranslation();
   return (
     <section className="section-wrapper" id="projects">
       <div
@@ -14,7 +16,8 @@ export const Projects = () => {
           <div className="relative overflow-hidden w-fit">
             <div style={{ opacity: 1, transform: "none" }}>
               <span className="text-3xl md:text-5xl font-black text-end">
-                Projects<span className="text-[#3ecfb2]">.</span>
+                {t("projects")}
+                <span className="text-[#3ecfb2]">.</span>
               </span>
             </div>
             <div
@@ -25,15 +28,15 @@ export const Projects = () => {
         </h2>
       </div>
       {/* <div className="grid gap-12 grid-cols-1 md:grid-cols-2"> */}
-      <span className="relative text-white text-3xl font-black text-center">
-        We are still working on this section :)
+      <span className="relative text-zinc-300 leading-relaxed text-xl text-center">
+        {t("projectsInfoProjects")}
       </span>
       {/* <CardProject
-          imageProject={LonelyCar}
-          descriptionProject={"Este es un proyecto chidote"}
-          nameProject={"Ezybuy"}
-          subNameProject={"Ezybuy"}
-        /> */}
+        imageProject={LonelyCar}
+        descriptionProject={"Este es un proyecto chidote"}
+        nameProject={"Ezybuy"}
+        subNameProject={"Ezybuy"}
+      /> */}
       {/* </div> */}
     </section>
   );

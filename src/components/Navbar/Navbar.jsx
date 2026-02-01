@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 export const Navbar = () => {
   const [activeSection, setActiveSection] = useState("#hero");
+  const { t, i18n } = useTranslation();
 
   const handleScroll = (e, id) => {
     e.preventDefault();
@@ -53,7 +55,7 @@ export const Navbar = () => {
             : "border-transparent hover:border-r-zinc-50 opacity-50 hover:bg-zinc-900"
         }`}
       >
-        About
+        {t("aboutNavbar")}
       </a>
 
       {/* Projects */}
@@ -66,7 +68,7 @@ export const Navbar = () => {
             : "border-transparent hover:border-r-zinc-50 opacity-50 hover:bg-zinc-900"
         }`}
       >
-        Projects
+        {t("projectsNavbar")}
       </a>
 
       {/* Experience */}
@@ -79,7 +81,7 @@ export const Navbar = () => {
             : "border-transparent hover:border-r-zinc-50 opacity-50 hover:bg-zinc-900"
         }`}
       >
-        Exp.
+        {t("experienceNavbar")}
       </a>
 
       {/* Contact */}
@@ -92,7 +94,7 @@ export const Navbar = () => {
             : "border-transparent hover:border-r-zinc-50 opacity-50 hover:bg-zinc-900"
         }`}
       >
-        Contact
+        {t("contactNavbar")}
       </a>
     </nav>
   );

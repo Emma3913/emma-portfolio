@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next";
 import CardExperience from "../../components/common/CardExperience";
 import { technologies, technologiesRecent } from "../../data";
 
 export default function Experience() {
+  const { t, i18n } = useTranslation();
   return (
     <section className="section-wrapper relative" id="experience">
       <div
@@ -13,7 +15,8 @@ export default function Experience() {
           <div class="relative overflow-hidden w-fit">
             <div style={{ opacity: 1, transform: "none" }}>
               <span class="text-3xl md:text-5xl font-black text-end">
-                Experience<span class="text-[#3ecfb2]">.</span>
+                {t("experience")}
+                <span class="text-[#3ecfb2]">.</span>
               </span>
             </div>
             <div
@@ -27,9 +30,7 @@ export default function Experience() {
       <CardExperience
         company={"TEKSI Technology Consultants S.A. de C.V."}
         date={"May – August 2024"}
-        description={
-          "Developed REST APIs with Spring Boot for a project in the financial sector. Created dynamic components in React + TypeScript, consuming APIs with Axios. Worked as a team using SCRUM, participating in sprints, and implementing best practices."
-        }
+        description={t("firstExperienceDescription")}
         location={"Tehuacán, Puebla"}
         position={"Fullstack Developer"}
         technologies={technologies}
@@ -38,9 +39,7 @@ export default function Experience() {
       <CardExperience
         company={"Maxikash – Motorcycle Finance Company"}
         date={"January 2025 – Present"}
-        description={
-          "Development of REST endpoints in Spring Boot 3 with Java 17, applying best practices and architectural standards. Implementation and maintenance of modules in a Java Web App system (Java 8, legacy) used for credit management. Support in the development of a mobile application using React Native CLI + TypeScript, including the generation of the deployment file for the Google Play Store. Integration of MySQL databases for data persistence. Participation in an agile team using the SCRUM methodology."
-        }
+        description={t("secondExperienceDescription")}
         location={"Mexico City"}
         position={"Backend Developer"}
         technologies={technologiesRecent}
