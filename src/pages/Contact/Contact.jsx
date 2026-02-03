@@ -21,7 +21,7 @@ export default function Contact() {
               <a
                 target="_blank"
                 className="text-indigo-300 hover:underline"
-                href="www.linkedin.com/in/emmanuel-alexander"
+                href="https://www.linkedin.com/in/emmanuel-alexander/"
               >
                 {" "}
                 Linkedin{" "}
