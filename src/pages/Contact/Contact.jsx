@@ -26,9 +26,7 @@ export default function Contact() {
                 {" "}
                 Linkedin{" "}
               </a>
-              {t(
-                "contactAditionals ,                                                    ",
-              )}
+              {t("contactAditionals")}
             </p>
           </div>
         </div>
